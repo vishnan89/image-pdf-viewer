@@ -4,7 +4,14 @@ html, body{
 
 .fill {
     align-items:center;
-    background-image: url("/css/assets/hallmark.png");
+    background-image: url("/css/assets/prokarma.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.fill2 {
+    align-items:center;
+    background-image: url("/css/assets/CrownConnect.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
