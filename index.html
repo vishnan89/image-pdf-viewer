@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Bootstrap 3 Admin</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Main -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!---Side bar--->
+            <div class="col-sm-3" style="border-right:2px solid black; background-color:#CCC2DC">
+                <!---Logo Area--->
+                <div class="fill" style="height:30vh; margin-top:15px"></div>
+
+                <hr>
+
+                <!---Menu Tree Area START--->
+                <div>
+                    <ul class="nav nav-stacked" style="height:150vh">
+
+                        <!---Login START--->
+                        <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#login">Login <i class="glyphicon glyphicon-chevron-right"></i></a>
+                            <ul class="nav nav-stacked collapse" style="padding-left:15px" id="login">
+                                <li onclick="showImg('/css/assets/login/Launch_flow.png');"><a>Launch_flow.png</a></li>
+                                <li onclick="showImg('/css/assets/login/Login_ClassDiagram.png');"><a>Login_ClassDiagram.png</a></li>
+                                <li onclick="showImg('/css/assets/login/Login_FlowDiagram.png');"><a>Login_FlowDiagram.png</a></li>
+                            </ul>
+                        </li>
+                        <!---Login END--->
+
+                        <!---Sync START--->
+                        <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#Sync">Sync<i class="glyphicon glyphicon-chevron-right"></i></a>
+                            <ul class="nav nav-stacked collapse" style="padding-left:15px" id="Sync">
+                                <li onclick="showPDF('/css/assets/Sync/FlowDiagram_Sync.pdf');"><a>FlowDiagram_Sync.pdf</a></li>
+                            </ul>
+                        </li>
+                        <!---Sync END--->
+
+                        <!---Store Visit START--->
+                        <li class="nav-header">
+                            <a href="#" data-toggle="collapse" data-target="#StoreVisit"> Store Visit <i class="glyphicon glyphicon-chevron-right"></i></a>
+                            <ul class="nav nav-stacked collapse" style="padding-left:15px" id="StoreVisit">
+
+                                <!---Lookup--->
+                                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#Lookup">a.Lookup<i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    <ul class="nav nav-stacked collapse" style="padding-left:15px" id="Lookup">
+                                        <li onclick="showImg('/css/assets/Store_Visit/Lookup/LookupActivityClassDiagram.jpg');"><a>LookupActivityClassDiagram.jpg</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/Lookup/LookupScreenflow.jpg');"><a>LookupScreenflow.jpg</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/Lookup/LookupSearchABO-SearchFlowV2.jpg');"><a>LookupSearchABO-SearchFlowV2.jpg</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/Lookup/LookupSearchSequenceV2.jpg');"><a>LookupSearchSequenceV2.jpg</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/Lookup/searchForFormatMatchUsingStockNumber (1).jpg');"><a>searchForFormatMatchUsingStockNumber (1).jpg</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/Lookup/searchForPatternMatchUsingStockNumber.jpg');"><a>searchForPatternMatchUsingStockNumber.jpg</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/Lookup/searchForProductUsingStockNumber.jpg');"><a>searchForProductUsingStockNumber.jpg</a></li>
+                                    </ul>
+                                </li>
+
+                                <!---Backorders--->
+                                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#Backorders">b.Backorders<i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    <ul class="nav nav-stacked collapse" style="padding-left:15px" id="Backorders">
+                                        <li onclick="showImg('/css/assets/Store_Visit/Backorders/Backorder_Flow.png');"><a>Backorder_Flow.png</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/Backorders/BackorderClassDiagram.png');"><a>BackorderClassDiagram.png</a></li>
+                                    </ul>
+                                </li>
+
+                                <!---Everyday_credit_and_Tally--->
+                                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#ECT">c.Everyday Credit and Tally<i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    <ul class="nav nav-stacked collapse" style="padding-left:15px" id="ECT">
+                                        <li onclick="showPDF('/css/assets/Store_Visit/Everyday_Credit_and_Tally/ClassDiagram_Everyday_credit_Tally.pdf');"><a>ClassDiagram_Everyday_credit_Tally.pdf</a></li>
+                                        <li onclick="showPDF('/css/assets/Store_Visit/Everyday_Credit_and_Tally/Flowdiagram_Everyday_credit_Tally.pdf');"><a>Flowdiagram_Everyday_credit_Tally.pdf</a></li>
+                                        <li onclick="showPDF('/css/assets/Store_Visit/Everyday_Credit_and_Tally/Userguide_Everyday_Credit_Tally.pdf');"><a>Userguide_Everyday_Credit_Tally.pdf</a></li>
+                                    </ul>
+                                </li>
+
+                                <!---Installations--->
+                                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#Installations">d.Installations<i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    <ul class="nav nav-stacked collapse" style="padding-left:15px" id="Installations">
+                                        <li onclick="showImg('/css/assets/Store_Visit/Installations/Installation_ClassDiagram.png');"><a>Installation_ClassDiagram.png</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/Installations/Installation_Flow.png');"><a>Installation_Flow.png</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/Installations/InstallationActivityDiagram.png');"><a>InstallationActivityDiagram.png</a></li>
+                                    </ul>
+                                </li>
+
+                                <!---POSR Audit--->
+                                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#POSR_Audit">e.POSR Audit<i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    <ul class="nav nav-stacked collapse" style="padding-left:15px" id="POSR_Audit">
+                                        <li onclick="showImg('/css/assets/Store_Visit/POSR_Audit/POSRAudit_Flow.png');"><a>POSRAudit_Flow.png</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/POSR_Audit/POSRAuditClassDiagram.png');"><a>POSRAuditClassDiagram.png</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/POSR_Audit/Reorder_Flow.png');"><a>Reorder_Flow.png</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/POSR_Audit/ReorderList_ClassDiagram.png');"><a>ReorderList_ClassDiagram.png</a></li>
+                                    </ul>
+                                </li>
+
+                                <!---SBT Discard--->
+                                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#SBT">f.SBT Discard<i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    <ul class="nav nav-stacked collapse" style="padding-left:15px" id="SBT">
+                                        <li onclick="showPDF('/css/assets/Store_visit/SBT_Discard/ClassDiagram_SBTDiscard.pdf');"><a>ClassDiagram_SBTDiscard.pdf</a></li>
+                                        <li onclick="showPDF('/css/assets/Store_visit/SBT_Discard/FlowDiagram_ SBTDiscard.pdf');"><a>FlowDiagram_ SBTDiscard.pdf</a></li>
+                                        <li onclick="showPDF('/css/assets/Store_visit/SBT_Discard/UserGuide_SBTDiscard.pdf');"><a>UserGuide_SBTDiscard.pdf</a></li>
+                                    </ul>
+                                </li>
+
+                                <!---SBT Transfer In & Out--->
+                                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#SBTTransfer">g.SBT Transfer In and out<i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    <ul class="nav nav-stacked collapse" style="padding-left:15px" id="SBTTransfer">
+                                        <li onclick="showPDF('/css/assets/Store_visit/SBT_TransferIn_Out/ClassDiagram_SBTTransferIn&Out.pdf');"><a>ClassDiagram_SBTTransfer In and Out.pdf</a></li>
+                                        <li onclick="showPDF('/css/assets/Store_visit/SBT_TransferIn_Out/FlowDiagram_ SBTTransferin.pdf');"><a>FlowDiagram_ SBTTransferin.pdf</a></li>
+                                        <li onclick="showPDF('/css/assets/Store_visit/SBT_TransferIn_Out/FlowDiagram_ SBTTransferout.pdf');"><a>FlowDiagram_ SBTTransferout.pdf</a></li>
+                                        <li onclick="showPDF('/css/assets/Store_visit/SBT_TransferIn_Out/User_Guide_SBT_Transfer_in&out.pdf');"><a>User_Guide_SBT_Transfer_in_out.pdf</a></li>
+                                    </ul>
+                                </li>
+
+                                <!---Season_Credit_and_Tally--->
+                                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#Season">h.Season Credit and Transfer<i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    <ul class="nav nav-stacked collapse" style="padding-left:15px" id="Season">
+                                        <li onclick="showPDF('/css/assets/Store_visit/Season_Credit_and_Tally/ClassDiagram_SeasonalCredit&Tally.pdf');"><a>ClassDiagram_Seasonal Credit and Tally.pdf</a></li>
+                                        <li onclick="showPDF('/css/assets/Store_visit/Season_Credit_and_Tally/FlowDiagram_SeasonalCredit&Tally.pdf');"><a>FlowDiagram_Seasonal Credit and Tally.pdf</a></li>
+                                        <li onclick="showPDF('/css/assets/Store_visit/Season_Credit_and_Tally/Userguide_SeasonalCredit&Tally.pdf');"><a>FUserguide_Seasonal Credit  and Tally.pdf</a></li>
+                                    </ul>
+                                </li>
+
+                                <!---Shipments--->
+                                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#Shipments">i.Shipments<i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    <ul class="nav nav-stacked collapse" style="padding-left:15px" id="Shipments">
+                                        <li onclick="showImg('/css/assets/Store_Visit/Shipments/Carton_Scanning_Flow.png');"><a>Carton_Scanning_Flow.png</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/Shipments/Shipment_ClassDiagram.png');"><a>Shipment_ClassDiagram.png</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/Shipments/Shipment_Flow.png');"><a>Shipment_Flow.png</a></li>
+                                        <li onclick="showImg('/css/assets/Store_Visit/Shipments/ShipmentActivityDiagram.png');"><a>ShipmentActivityDiagram.png</a></li>
+                                    </ul>
+                                </li>
+
+                                <!---Store_Visit_Summary--->
+                                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#SVS">j.Store Visit Summary<i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    <ul class="nav nav-stacked collapse" style="padding-left:15px" id="SVS">
+                                        <li onclick="showPDF('/css/assets/Store_visit/Store_Visit_Summary/Storevisit_Summary_Classdiagram.pdf');"><a>Storevisit_Summary_Classdiagram.pdf</a></li>
+                                    </ul>
+                                </li>
+
+                                <!---Additional PDFs--->
+                                <li onclick="showPDF('/css/assets/Store_visit/pdf/Everyday Credit & Tally.pdf');"><a>Everyday Credit and Tally.pdf</a></li>
+                                <li onclick="showPDF('/css/assets/Store_visit/pdf/Installation, Backorder & Shipment.pdf');"><a>Installation, Backorder and Shipment.pdf</a></li>
+                                <li onclick="showPDF('/css/assets/Store_visit/pdf/POSR Audit.pdf');"><a>POSR Audit.pdf</a></li>
+                                <li onclick="showPDF('/css/assets/Store_visit/pdf/SBT Discard & SBT Transfer.pdf');"><a>SBT Discard and SBT Transfer.pdf</a></li>
+                                <li onclick="showPDF('/css/assets/Store_visit/pdf/Store Visit GPS & Store Checkin.pdf');"><a>Store Visit GPS and Store Checkin.pdf</a></li>
+                            </ul>
+                        </li>
+                        <!---Store Visit END--->
+
+                        <!---AccountsList START--->
+                        <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#AccountsList">Accounts List <i class="glyphicon glyphicon-chevron-right"></i></a>
+                            <ul class="nav nav-stacked collapse" style="padding-left:15px" id="AccountsList">
+                                <li onclick="showPDF('/css/assets/AccountList/3 Look up & Account List.pdf');"><a>3 Look up and Account List.pdf</a></li>
+                                <li onclick="showImg('/css/assets/AccountList/AccountAdd_Flow.png');"><a>AccountAdd_Flow.png</a></li>
+                                <li onclick="showImg('/css/assets/AccountList/AccountAddRemove_ClassDiagram.png');"><a>AccountAddRemove_ClassDiagram.png</a></li>
+                                <li onclick="showImg('/css/assets/AccountList/AccountRemove_Flow.png');"><a>AccountRemove_Flow.png</a></li>
+                                <li onclick="showImg('/css/assets/AccountList/AccountsList_ActivityDiagram.png');"><a>AccountsList_ActivityDiagram.png</a></li>
+                                <li onclick="showImg('/css/assets/AccountList/GetAccountlist.png');"><a>GetAccountlist.png</a></li>
+                            </ul>
+                        </li>
+                        <!---Accounts END--->
+
+                        <!---Settings and Password START--->
+                        <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#SP">Settings and Password <i class="glyphicon glyphicon-chevron-right"></i></a>
+                            <ul class="nav nav-stacked collapse" style="padding-left:15px" id="SP">
+                                <li onclick="showPDF('/css/assets/Settings_and_Password/Settings.pdf');"><a>Settings.pdf</a></li>
+                            </ul>
+                        </li>
+                        <!---Settings and Password END--->
+
+                        <!---Sent and Confirmed START--->
+                        <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#SC">Sent and Confirmed<i class="glyphicon glyphicon-chevron-right"></i></a>
+                            <ul class="nav nav-stacked collapse" style="padding-left:15px" id="SC">
+                                <li onclick="showPDF('/css/assets/Sent_and_Confirmed/8 Sent And Confirmed.pdf');"><a>8 Sent And Confirmed.pdf</a></li>
+                                <li onclick="showImg('/css/assets/Sent_and_Confirmed/SendConfTimeRecordsFrag.png');"><a>SendConfTimeRecordsFrag.png</a></li>
+                                <li onclick="showImg('/css/assets/Sent_and_Confirmed/SentConfirm_Accounts_ClassDiagram.png');"><a>SentConfirm_Accounts_ClassDiagram.png</a></li>
+                                <li onclick="showImg('/css/assets/Sent_and_Confirmed/SentConfirm_TimeRecord_ClassDiagram.png');"><a>SentConfirm_TimeRecord_ClassDiagram.png</a></li>
+                                <li onclick="showImg('/css/assets/Sent_and_Confirmed/SentConfirmActivityDiagram.png');"><a>SentConfirmActivityDiagram.png</a></li>
+                                <li onclick="showImg('/css/assets/Sent_and_Confirmed/SentConfStorevisitFrag_Flow.png');"><a>SentConfStorevisitFrag_Flow.png</a></li>
+                            </ul>
+                        </li>
+                        <!---Sent and Confirmed END--->
+
+                        <!---Time Drawer START--->
+                        <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#TD">Time Drawer<i class="glyphicon glyphicon-chevron-right"></i></a>
+                            <ul class="nav nav-stacked collapse" style="padding-left:15px" id="TD">
+                                <li onclick="showPDF('/css/assets/Time_Drawer/5 Time Drawer.pdf');"><a>5 Time Drawer.pdf</a></li>
+                            </ul>
+                        </li>
+                        <!---Time Drawer END--->
+
+                        <!---Time Tracking START--->
+                        <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#TT">Time Tracking<i class="glyphicon glyphicon-chevron-right"></i></a>
+                            <ul class="nav nav-stacked collapse" style="padding-left:15px" id="TT">
+                                <li onclick="showPDF('/css/assets/Time_Tracking/4 TimeTracking.pdf');"><a>4 TimeTracking.pdf</a></li>
+                                <li onclick="showImg('/css/assets/Time_Tracking/timeandexpenses_class_diagram.jpg');"><a>timeandexpenses_class_diagram.jpg</a></li>
+                                <li onclick="showImg('/css/assets/Time_Tracking/timeandexpensesequence.jpg');"><a>timeandexpensesequence.jpg</a></li>
+                                <li onclick="showImg('/css/assets/Time_Tracking/TimerCreation.jpg');"><a>TimerCreation.jpg</a></li>
+                            </ul>
+                        </li>
+                        <!---Time Tracking END--->
+
+                        <!---Business Terms START--->
+                        <li class="nav-header">
+                            <a href="#" data-toggle="collapse" data-target="#BT"> Business Terms <i class="glyphicon glyphicon-chevron-right"></i></a>
+                            <ul class="nav nav-stacked collapse" style="padding-left:15px" id="BT">
+
+                                <!---Roles--->
+                                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#Roles">Roles<i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    <ul class="nav nav-stacked collapse" style="padding-left:15px" id="Roles">
+                                        <li onclick="showPDF('/css/assets/Business_Terms/Roles/Roles&Resp.pdf');"><a>Roles and Resp.pdf</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!---Business Terms END--->
+
+                        <!---MBO START--->
+                        <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#MBO">MBO<i class="glyphicon glyphicon-chevron-right"></i></a>
+                            <ul class="nav nav-stacked collapse" style="padding-left:15px" id="MBO">
+                                <li onclick="showPDF('/css/assets/MBO/Hallmark_MBO Technical Document.pdf');"><a>Hallmark_MBO Technical Document.pdf</a></li>
+                            </ul>
+                        </li>
+                        <!---MBO END--->
+
+                        <!---Transition APK START--->
+                        <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#TAPK">Transition APK<i class="glyphicon glyphicon-chevron-right"></i></a>
+                            <ul class="nav nav-stacked collapse" style="padding-left:15px" id="TAPK">
+                                <li onclick="showPDF('/css/assets/Transition_APK/Regular_APK_Generation.pdf');"><a>Regular_APK_Generation.pdf</a></li>
+                                <li onclick="showPDF('/css/assets/Transition_APK/Transition_APK_Generation.pdf');"><a>Transition_APK_Generation.pdf</a></li>
+                            </ul>
+                        </li>
+                        <!---Transition APK END--->
+
+
+
+                    </ul>
+                </div>
+                <!--Menu Tree Area END--->
+            </div>
+
+            <!---Content Dislay Area--->
+            <div id="content_area" class="col-sm-9">
+                <img id="imgHolder" style="width:75%;height:75%">
+                <iframe id="pdfHolder" style="width:100%; height: 100vh" frameBorder="0"></iframe>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- script references -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="src/jquery.imagecursorzoom.js"></script>
+    <script>
+        $('#imgHolder').imageCursorZoom();
+    </script>
+
+</body>
+
+</html>
