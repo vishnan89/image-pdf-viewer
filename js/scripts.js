@@ -10,17 +10,22 @@ $(document).ready(function () {
 });
 
 function showImg(image) {
+    $("li").removeClass("golden");
     $("#pdfHolder").hide();
     $("#imgHolder").show();
     var imghol = document.getElementById("imgHolder");
     imghol.src = image;
-    $("html, body").animate({ scrollTop: 0 }, "slow");
+    var target = $(event.target);
+    $(event.target).closest("li").addClass("golden");
 }
 
 function showPDF(pdf) {
+    $("li").removeClass("golden");
     $("#imgHolder").hide();
     $("#pdfHolder").show();
     var pdfhol = document.getElementById("pdfHolder");
     pdfhol.src = pdf;
-    $("html, body").animate({ scrollTop: 0 }, "slow");
+    var target = $(event.target).closest("li");
+    $(event.target).closest("li").addClass("golden");
+
 }

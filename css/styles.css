@@ -3,17 +3,22 @@ html, body{
 }
 
 .fill {
-    align-items:center;
-    background-image: url("/css/assets/prokarma.png");
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 60%;
+}
+
+.golden {
+    background-color: goldenrod;
+}
+
+.menu_tree{
+    overflow: -moz-scrollbars-vertical !important;
+    overflow-y: scroll !important;
 }
 
 .fill2 {
-    align-items:center;
-    background-image: url("/css/assets/CrownConnect.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 60%;
 }
 
 #imgHolder{
@@ -23,6 +28,8 @@ html, body{
 li{
     word-wrap: break-word;
     cursor:pointer;
+    font-size:15px !important;
+    line-height: 1.0 !important
 }
 
 hr {
